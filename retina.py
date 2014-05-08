@@ -12,7 +12,7 @@ class Retina(object):
         if record is not None:
             self.record = open(record, 'w')
         else:
-            self.record is None
+            self.record = None
         thread.start_new_thread(self.update_loop, ())
 
     def clear_image(self):
